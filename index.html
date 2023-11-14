@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/global.css">
 
     <script src="script.js" defer></script>
   </head>
   <body>
-    <picture>
-      <img src="./assets/bg-trade.jpg" alt="">
-    </picture>
-    <div class="container">
+    
+    <main class="app">
       <h1 class="page-title">
         Currency Converter
       </h1>
-     
-    </div>
-    <a href="https://alura.com.br/" target="_blank">
-      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-      <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
-    </a>
 
-    
+      <div class="card">
+        <div class="value-wrapper">
+          <h2>Valor</h2>
+          <div class="coin">
+            <label for="value">Selecione a Moeda</label>
+            <select id="value">
+              <option value="" data-default disabled selected></option>
+              <option value="real">Real Brasil</option>
+              <option value="dolar">Dólar Americano</option> 
+            </select>
+          </div>
+
+          <div class="value">
+            <label for="value">Valor a converter</label>
+            <input type="number">
+          </div>
+        </div>
+        <div class="conversion-wrapper">
+          <h2>Conversão</h2>
+          <h3></h3>
+        </div>
+      </div>
+     
+    </main> 
   </body>
 </html>
